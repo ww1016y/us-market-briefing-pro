@@ -1,5 +1,5 @@
 yfinance
-google-generativeai
+google-genai
 matplotlib
 seaborn
 python-dotenv
