@@ -7,7 +7,7 @@ def create_sector_heatmap(sector_data, output_path="sector_heatmap.png"):
     """섹터별 평균 수익률 히트맵 생성"""
     data = []
     for sec, (label, stocks) in sector_data.items():
-        avg_change = sum(s.change_pct for s in stocks) / len(stocks) if stocks else 0
+        avg_change = sum(s['change_pct'] for s in stocks) / len(stocks) if stocks else 0
         data.append({"Sector": label, "Change": avg_change})
     
     df = pd.DataFrame(data)
