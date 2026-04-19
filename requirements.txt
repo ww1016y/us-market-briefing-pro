@@ -1,0 +1,8 @@
+yfinance
+google-generativeai
+matplotlib
+seaborn
+python-dotenv
+pandas
+requests
+deep-translator
